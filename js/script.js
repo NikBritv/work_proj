@@ -1,25 +1,20 @@
 "use strict";
 
-// const  category = 'toys';
-// console.log(`https://someurl.com/${category}/5`);
-// const user = "Ivan"
-// alert(`Привет, ${user}`);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-console.log('arr' + " - object");
-console.log(4 + " - object");
+const personalMoveDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let incr = 10,
-    decr = 10;
+const a = prompt('Один из последних просмотренных фильмов', ''),
+      b = prompt('На сколько оцените его? ', ''),
+      c = prompt('Один из последних просмотренных фильмов', ''),
+      d = prompt('На сколько оцените его? ', '');
 
-// incr++;
-// decr--;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(5%2);
-
-console.log(2*4 === 8);
-const isChecked = false,
-      isClosed = false;
-console.log(isChecked || isClosed);
+personalMoveDB.movies [a] = b;
+personalMoveDB.movies [c] = d;
+console.log(personalMoveDB);
